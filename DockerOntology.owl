@@ -1,0 +1,1924 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/mariana/ontologies/2020/9/DockerOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/mariana/ontologies/2020/9/DockerOntology">
+    <Prefix name="" IRI="http://www.semanticweb.org/mariana/ontologies/2020/9/DockerOntology"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>This is an ontology that decribes the docker ecosystem.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#Network"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BlockIO"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Config"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DockerConfig"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dockerfile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GraphDriver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HostConfig"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HostMapping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Image"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LogConfig"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mounts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NetworkSettings"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Networks"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RepoDigests"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RepoTags"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RestartPolicy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RootFS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#State"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#blockIO"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#config"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cpu"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#dockerConfig"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#dockerfile"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#graphDriver"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hostConfig"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hostMapping"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#logConfig"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mounts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#network"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#networkSettings"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#repoDigest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#repoTags"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#restartPolicy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#rootFS"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#state"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#aliases"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#appArmorProfile"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#architecture"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#args"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#argsEscaped"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#attachStream"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#author"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#autoRemove"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#binds"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#blkioDeviceReadBps"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#blkioDeviceReadIOps"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#blkioDeviceWriteBps"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#blkioDeviceWriteIOps"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#blkioWeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#blkioWeightDevice"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#bridge"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#capAdd"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#capDrop"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cgroup"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cgroupParent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cmd"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#comment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#consoleSize"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#containerIDFile"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cpuCount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cpuPercent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cpuPeriod"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cpuQuota"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cpuRealtimePeriod"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cpuRealtimeRuntime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cpuShares"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cpusetCpus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cpusetMems"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#created"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#data"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dead"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#destination"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#deviceCgroupRules"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#digests"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#diskQuota"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dns"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dnsOption"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dnsSearch"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dockerVersion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dockerfileAdd"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dockerfileEnv"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dockerfileExpose"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dockerfileFrom"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dockerfileLabel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dockerfileStopSignal"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dockerfileUser"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dockerfileVolume"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dockerfileWorkDir"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#domainName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#driver"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#endpointID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#entrypoint"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#env"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#execIDs"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#exitCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#extraHosts"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#finishedAt"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#gateway"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#globalIPv6Address"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#globalIPv6PrefixLen"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#groupAdd"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hairpinMode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hostName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hostnamePath"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hostsPath"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#iOMaximumBandwidth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#iOMaximumIOps"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#iPAddress"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#iPPrefixLen"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#iPv6Gateway"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#intstructionCopy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ipamConfig"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ipcMode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isolation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#kernelMemory"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#labels"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#layers"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#linkLocalIPv6Address"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#linkLocalIPv6PrefixLen"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#links"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#logPath"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#macAddress"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maximumRetryCount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#memory"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#memoryReservation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#memorySwap"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#memorySwappiness"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mountLabel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nanoCpus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#networkID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#networkMode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#onBuild"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#oomKillDisable"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#oomScoreAdj"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#oomkilled"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#openStdin"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#os"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#parent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#path"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#paused"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pid"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pidMode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pidsLimit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#privileged"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#processLabel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#propagation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#publishedAllPorts"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#readonlyRootfs"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#resolveConfPath"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#restartCount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#restarting"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#running"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#runtime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#rw"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sandboxID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sandboxKey"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#secondaryIPAddresses"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#secondaryIPv6Addresses"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#securityOpt"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#shmSize"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#size"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#source"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#startedAt"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#status"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tags"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ulimits"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#user"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#usernsMode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#utsMode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#virtualSize"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#volumeDriver"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#workingDir"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#ContainerImage"/>
+        <Class IRI="#Image"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#FileSystem"/>
+        <Class IRI="#BlockIO"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#Network"/>
+        <Class IRI="#Networks"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#BlockIO"/>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#ContainerResources"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Networks"/>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#ContainerResources"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#blockIO"/>
+        <Class IRI="#Config"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#blockIO"/>
+        <Class IRI="#HostConfig"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#config"/>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#Container"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#config"/>
+        <Class IRI="#Image"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cpu"/>
+        <Class IRI="#Config"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cpu"/>
+        <Class IRI="#HostConfig"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#dockerConfig"/>
+        <Class IRI="#Config"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#dockerfile"/>
+        <Class IRI="#Image"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#graphDriver"/>
+        <Class IRI="#Image"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hostConfig"/>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#Container"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hostConfig"/>
+        <Class IRI="#Image"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hostMapping"/>
+        <Class IRI="#NetworkSettings"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#logConfig"/>
+        <Class IRI="#HostConfig"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#mounts"/>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#Container"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#network"/>
+        <Class IRI="#NetworkSettings"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#networkSettings"/>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#Container"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#repoDigest"/>
+        <Class IRI="#Image"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#repoTags"/>
+        <Class IRI="#Image"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#restartPolicy"/>
+        <Class IRI="#HostConfig"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#rootFS"/>
+        <Class IRI="#Image"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#state"/>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#Container"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#state"/>
+        <Class IRI="#Image"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#blockIO"/>
+        <Class IRI="#BlockIO"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#config"/>
+        <Class IRI="#Config"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cpu"/>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#CPU"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#dockerConfig"/>
+        <Class IRI="#DockerConfig"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#dockerfile"/>
+        <Class IRI="#Dockerfile"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#graphDriver"/>
+        <Class IRI="#GraphDriver"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hostConfig"/>
+        <Class IRI="#HostConfig"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hostMapping"/>
+        <Class IRI="#HostMapping"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#logConfig"/>
+        <Class IRI="#LogConfig"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#mounts"/>
+        <Class IRI="#Mounts"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#network"/>
+        <Class IRI="#Networks"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#networkSettings"/>
+        <Class IRI="#NetworkSettings"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#repoDigest"/>
+        <Class IRI="#RepoDigests"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#repoTags"/>
+        <Class IRI="#RepoTags"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#restartPolicy"/>
+        <Class IRI="#RestartPolicy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#rootFS"/>
+        <Class IRI="#RootFS"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#state"/>
+        <Class IRI="#State"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#aliases"/>
+        <Class IRI="#Networks"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#appArmorProfile"/>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#Container"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#architecture"/>
+        <Class IRI="#Image"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#args"/>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#Container"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#argsEscaped"/>
+        <Class IRI="#DockerConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#attachStream"/>
+        <Class IRI="#DockerConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#author"/>
+        <Class IRI="#Image"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#autoRemove"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#binds"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#blkioDeviceReadBps"/>
+        <Class IRI="#BlockIO"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#blkioDeviceReadIOps"/>
+        <Class IRI="#BlockIO"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#blkioDeviceWriteBps"/>
+        <Class IRI="#BlockIO"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#blkioDeviceWriteIOps"/>
+        <Class IRI="#BlockIO"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#blkioWeight"/>
+        <Class IRI="#BlockIO"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#blkioWeightDevice"/>
+        <Class IRI="#BlockIO"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#bridge"/>
+        <Class IRI="#NetworkSettings"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#capAdd"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#capDrop"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cgroup"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cgroupParent"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cmd"/>
+        <Class IRI="#DockerConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#comment"/>
+        <Class IRI="#Image"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#consoleSize"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#containerIDFile"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cpuCount"/>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#CPU"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cpuPercent"/>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#CPU"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cpuPeriod"/>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#CPU"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cpuQuota"/>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#CPU"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cpuRealtimePeriod"/>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#CPU"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cpuRealtimeRuntime"/>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#CPU"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cpuShares"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cpusetCpus"/>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#CPU"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cpusetMems"/>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#CPU"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#created"/>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#Container"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#created"/>
+        <Class IRI="#Image"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#data"/>
+        <Class IRI="#GraphDriver"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dead"/>
+        <Class IRI="#State"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#destination"/>
+        <Class IRI="#Mounts"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#deviceCgroupRules"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#digests"/>
+        <Class IRI="#Image"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#diskQuota"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dns"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dnsOption"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dnsSearch"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dockerVersion"/>
+        <Class IRI="#Image"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dockerfileAdd"/>
+        <Class IRI="#Dockerfile"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dockerfileEnv"/>
+        <Class IRI="#Dockerfile"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dockerfileExpose"/>
+        <Class IRI="#Dockerfile"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dockerfileFrom"/>
+        <Class IRI="#Dockerfile"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dockerfileLabel"/>
+        <Class IRI="#Dockerfile"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dockerfileStopSignal"/>
+        <Class IRI="#Dockerfile"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dockerfileUser"/>
+        <Class IRI="#Dockerfile"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dockerfileVolume"/>
+        <Class IRI="#Dockerfile"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dockerfileWorkDir"/>
+        <Class IRI="#Dockerfile"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#domainName"/>
+        <Class IRI="#DockerConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#driver"/>
+        <Class IRI="#Mounts"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#endpointID"/>
+        <Class IRI="#NetworkSettings"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#endpointID"/>
+        <Class IRI="#Networks"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#entrypoint"/>
+        <Class IRI="#DockerConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#env"/>
+        <Class IRI="#DockerConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#execIDs"/>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#Container"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#exitCode"/>
+        <Class IRI="#State"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#extraHosts"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#finishedAt"/>
+        <Class IRI="#State"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#gateway"/>
+        <Class IRI="#NetworkSettings"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#gateway"/>
+        <Class IRI="#Networks"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#globalIPv6Address"/>
+        <Class IRI="#NetworkSettings"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#globalIPv6Address"/>
+        <Class IRI="#Networks"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#globalIPv6PrefixLen"/>
+        <Class IRI="#NetworkSettings"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#globalIPv6PrefixLen"/>
+        <Class IRI="#Networks"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#groupAdd"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hairpinMode"/>
+        <Class IRI="#NetworkSettings"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hostName"/>
+        <Class IRI="#DockerConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hostnamePath"/>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#Container"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hostsPath"/>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#Container"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#iOMaximumBandwidth"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#iOMaximumIOps"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#iPAddress"/>
+        <Class IRI="#NetworkSettings"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#iPAddress"/>
+        <Class IRI="#Networks"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#iPPrefixLen"/>
+        <Class IRI="#NetworkSettings"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#iPPrefixLen"/>
+        <Class IRI="#Networks"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#iPv6Gateway"/>
+        <Class IRI="#NetworkSettings"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#iPv6Gateway"/>
+        <Class IRI="#Networks"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id"/>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#Container"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id"/>
+        <Class IRI="#Image"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#intstructionCopy"/>
+        <Class IRI="#Dockerfile"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ipamConfig"/>
+        <Class IRI="#Networks"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ipcMode"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isolation"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#kernelMemory"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#labels"/>
+        <Class IRI="#DockerConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#layers"/>
+        <Class IRI="#RootFS"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#linkLocalIPv6Address"/>
+        <Class IRI="#NetworkSettings"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#linkLocalIPv6PrefixLen"/>
+        <Class IRI="#NetworkSettings"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#links"/>
+        <Class IRI="#Networks"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#logPath"/>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#Container"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#macAddress"/>
+        <Class IRI="#NetworkSettings"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#macAddress"/>
+        <Class IRI="#Networks"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#maximumRetryCount"/>
+        <Class IRI="#RestartPolicy"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#memory"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#memoryReservation"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#memorySwap"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#memorySwappiness"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mode"/>
+        <Class IRI="#Mounts"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mountLabel"/>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#Container"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#Container"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#GraphDriver"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#Mounts"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#Networks"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#RestartPolicy"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nanoCpus"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#networkID"/>
+        <Class IRI="#Networks"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#networkMode"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#onBuild"/>
+        <Class IRI="#DockerConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#oomKillDisable"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#oomScoreAdj"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#oomkilled"/>
+        <Class IRI="#State"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#openStdin"/>
+        <Class IRI="#DockerConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#os"/>
+        <Class IRI="#Image"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#parent"/>
+        <Class IRI="#Image"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#path"/>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#Container"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#paused"/>
+        <Class IRI="#State"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pid"/>
+        <Class IRI="#State"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pidMode"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pidsLimit"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#privileged"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#processLabel"/>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#Container"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#propagation"/>
+        <Class IRI="#Mounts"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#publishedAllPorts"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#readonlyRootfs"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#resolveConfPath"/>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#Container"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#restartCount"/>
+        <Class IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#Container"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#restarting"/>
+        <Class IRI="#State"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#running"/>
+        <Class IRI="#State"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#runtime"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#rw"/>
+        <Class IRI="#Mounts"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sandboxID"/>
+        <Class IRI="#NetworkSettings"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sandboxKey"/>
+        <Class IRI="#NetworkSettings"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#secondaryIPAddresses"/>
+        <Class IRI="#NetworkSettings"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#secondaryIPv6Addresses"/>
+        <Class IRI="#NetworkSettings"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#securityOpt"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#shmSize"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#size"/>
+        <Class IRI="#Image"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#source"/>
+        <Class IRI="#Mounts"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#startedAt"/>
+        <Class IRI="#State"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#status"/>
+        <Class IRI="#State"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tags"/>
+        <Class IRI="#Image"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tty"/>
+        <Class IRI="#DockerConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#type"/>
+        <Class IRI="#LogConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#type"/>
+        <Class IRI="#RootFS"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ulimits"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#user"/>
+        <Class IRI="#DockerConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#usernsMode"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#utsMode"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#virtualSize"/>
+        <Class IRI="#Image"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#volumeDriver"/>
+        <Class IRI="#HostConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#workingDir"/>
+        <Class IRI="#DockerConfig"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#aliases"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#appArmorProfile"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#architecture"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#args"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#argsEscaped"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#attachStream"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#author"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#autoRemove"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#binds"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#blkioDeviceReadBps"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#blkioDeviceReadIOps"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#blkioDeviceWriteBps"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#blkioDeviceWriteIOps"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#blkioWeight"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#blkioWeightDevice"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#bridge"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#capAdd"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#capDrop"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cgroup"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cgroupParent"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cmd"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#comment"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#consoleSize"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#containerIDFile"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cpuCount"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cpuPercent"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cpuPeriod"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cpuQuota"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cpuRealtimePeriod"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cpuRealtimeRuntime"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cpuShares"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cpusetCpus"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cpusetMems"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#created"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#data"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dead"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#destination"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#deviceCgroupRules"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#digests"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#diskQuota"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dns"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dnsOption"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dnsSearch"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dockerVersion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dockerfileAdd"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dockerfileEnv"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dockerfileExpose"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dockerfileFrom"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dockerfileLabel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dockerfileStopSignal"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dockerfileUser"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dockerfileVolume"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dockerfileWorkDir"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#domainName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#driver"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#endpointID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#entrypoint"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#execIDs"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#exitCode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#extraHosts"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#finishedAt"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#gateway"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#globalIPv6Address"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#globalIPv6PrefixLen"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#groupAdd"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hairpinMode"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hostName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hostnamePath"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hostsPath"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#iOMaximumBandwidth"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#iOMaximumIOps"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#iPAddress"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#iPPrefixLen"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#iPv6Gateway"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#intstructionCopy"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ipamConfig"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ipcMode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isolation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#kernelMemory"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#labels"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#layers"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#linkLocalIPv6Address"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#linkLocalIPv6PrefixLen"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#links"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#logPath"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#macAddress"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#maximumRetryCount"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#memory"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#memoryReservation"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#memorySwap"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#memorySwappiness"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mountLabel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nanoCpus"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#networkID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#networkMode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#onBuild"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#oomKillDisable"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#oomScoreAdj"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#oomkilled"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#openStdin"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#os"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#parent"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#path"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#paused"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pid"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pidMode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pidsLimit"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#privileged"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#processLabel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#propagation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#publishedAllPorts"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#readonlyRootfs"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#resolveConfPath"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#restartCount"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#restarting"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#running"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#runtime"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#rw"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sandboxID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sandboxKey"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#secondaryIPAddresses"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#secondaryIPv6Addresses"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#securityOpt"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#shmSize"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#size"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#source"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#startedAt"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#status"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tags"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tty"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#type"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ulimits"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#user"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#usernsMode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#utsMode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#virtualSize"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#volumeDriver"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#workingDir"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

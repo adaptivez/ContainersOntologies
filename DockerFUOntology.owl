@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mariana/ontologies/2020/9/DockerFUOntolofy#"
+     xml:base="http://www.semanticweb.org/mariana/ontologies/2020/9/DockerFUOntolofy"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mariana/ontologies/2020/9/DockerFUOntolofy">
+        <owl:imports rdf:resource="http://www.semanticweb.org/mariana/ontologies/2020/9/DockerOntology"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mariana/ontologies/2020/9/DockerFUOntolofy#utilizationFactors -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mariana/ontologies/2020/9/DockerFUOntolofy#utilizationFactors">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#ContainerResources"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mariana/ontologies/2020/9/DockerFUOntolofy#UtilizationFactors"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mariana/ontologies/2020/9/DockerFUOntolofy#image_file -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mariana/ontologies/2020/9/DockerFUOntolofy#image_file">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mariana/ontologies/2020/9/DockerOntology#Image"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mariana/ontologies/2020/9/DockerFUOntolofy#platform -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mariana/ontologies/2020/9/DockerFUOntolofy#platform">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#Container"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mariana/ontologies/2020/9/DockerFUOntolofy#utilization -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mariana/ontologies/2020/9/DockerFUOntolofy#utilization">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mariana/ontologies/2020/9/DockerFUOntolofy#UtilizationFactors"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mariana/ontologies/2020/9/DockerFUOntolofy#utilizationLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mariana/ontologies/2020/9/DockerFUOntolofy#utilizationLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mariana/ontologies/2020/9/DockerFUOntolofy#UtilizationFactors"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mariana/ontologies/2020/9/DockerFUOntolofy#volumes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mariana/ontologies/2020/9/DockerFUOntolofy#volumes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#Container"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mariana/ontologies/2020/9/DockerOntology#memory -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/mariana/ontologies/2020/9/DockerOntology#memory">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#Memory"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/mariana/ontologies/2020/9/DockerOntology#memoryReservation -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/mariana/ontologies/2020/9/DockerOntology#memoryReservation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#Memory"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/mariana/ontologies/2020/9/DockerOntology#memorySwap -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/mariana/ontologies/2020/9/DockerOntology#memorySwap">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#Memory"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/mariana/ontologies/2020/9/DockerOntology#memorySwappiness -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/mariana/ontologies/2020/9/DockerOntology#memorySwappiness">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology#Memory"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mariana/ontologies/2020/9/DockerFUOntolofy#UtilizationFactors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mariana/ontologies/2020/9/DockerFUOntolofy#UtilizationFactors"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

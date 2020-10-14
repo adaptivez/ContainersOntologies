@@ -1,0 +1,289 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology">
+    <Prefix name="" IRI="http://www.semanticweb.org/mariana/ontologies/2020/8/VirtualContainerISOOntology"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Autoscaling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CPU"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Container"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContainerDaemon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContainerImage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContainerManagementSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContainerMetadata"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContainerOperations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContainerRegistry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContainerResources"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContainerVirtualNetwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Create"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeclarativeConfiguration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Delete"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FileSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FilesystemLayers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImageIndex"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImageLayout"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImageManifest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ManagementCapabilities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Memory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Monitoring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Orchestration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResourceManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scheduling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ServiceDiscovery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Start"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UpdatesAndUpgrades"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VirtualNetworking"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#become"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#createAndManage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#includes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMadeUpOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#manage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#offers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#stores"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Autoscaling"/>
+        <Class IRI="#ManagementCapabilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CPU"/>
+        <Class IRI="#ContainerResources"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Create"/>
+        <Class IRI="#ContainerOperations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeclarativeConfiguration"/>
+        <Class IRI="#ManagementCapabilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Delete"/>
+        <Class IRI="#ContainerOperations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FileSystem"/>
+        <Class IRI="#ContainerResources"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FilesystemLayers"/>
+        <Class IRI="#ContainerMetadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImageIndex"/>
+        <Class IRI="#ContainerMetadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImageLayout"/>
+        <Class IRI="#ContainerMetadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImageManifest"/>
+        <Class IRI="#ContainerMetadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kill"/>
+        <Class IRI="#ContainerOperations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Memory"/>
+        <Class IRI="#ContainerResources"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Monitoring"/>
+        <Class IRI="#ManagementCapabilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Orchestration"/>
+        <Class IRI="#ManagementCapabilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResourceManagement"/>
+        <Class IRI="#ManagementCapabilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scheduling"/>
+        <Class IRI="#ManagementCapabilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ServiceDiscovery"/>
+        <Class IRI="#ManagementCapabilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Start"/>
+        <Class IRI="#ContainerOperations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UpdatesAndUpgrades"/>
+        <Class IRI="#ManagementCapabilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirtualNetworking"/>
+        <Class IRI="#ManagementCapabilities"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#become"/>
+        <Class IRI="#ContainerImage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#contains"/>
+        <Class IRI="#ContainerImage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#createAndManage"/>
+        <Class IRI="#ContainerDaemon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has"/>
+        <Class IRI="#Container"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#includes"/>
+        <Class IRI="#ContainerManagementSystem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isMadeUpOf"/>
+        <Class IRI="#ContainerVirtualNetwork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#manage"/>
+        <Class IRI="#ContainerManagementSystem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#offers"/>
+        <Class IRI="#ContainerDaemon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#stores"/>
+        <Class IRI="#ContainerRegistry"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#become"/>
+        <Class IRI="#Container"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#contains"/>
+        <Class IRI="#ContainerMetadata"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#createAndManage"/>
+        <Class IRI="#Container"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has"/>
+        <Class IRI="#ContainerResources"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#includes"/>
+        <Class IRI="#ManagementCapabilities"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isMadeUpOf"/>
+        <Class IRI="#Container"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#manage"/>
+        <Class IRI="#Container"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#offers"/>
+        <Class IRI="#ContainerOperations"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#stores"/>
+        <Class IRI="#ContainerImage"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
